@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "plzwork",
-    "slug": "plzwork",
+    "name": "minimal",
+    "slug": "minimal",
     "version": "1.0.0",
 
-    "scheme": "plzwork",
+    "scheme": "minimal",
     "web": {
       "bundler": "metro",
       "output": "static",
