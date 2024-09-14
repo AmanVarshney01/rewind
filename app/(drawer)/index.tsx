@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
-        <Text>YOO</Text>
+        <Text>YOOsss</Text>
       </Container>
     </>
   );
