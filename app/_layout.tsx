@@ -1,12 +1,14 @@
-import '../global.css';
+import '~/global.css';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Theme, ThemeProvider } from '@react-navigation/native';
 import { SplashScreen, Stack } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import * as React from 'react';
 import { Platform } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { setAndroidNavigationBar } from '~/lib/android-navigation-bar';
 import { NAV_THEME } from '~/lib/constants';
 import { useColorScheme } from '~/lib/useColorScheme';
 
@@ -48,6 +50,8 @@ export default function RootLayout() {
         return;
       }
       const colorTheme = theme === 'dark' ? 'dark' : 'light';
+      setAndroidNavigationBar(colorTheme);
+
       if (colorTheme !== colorScheme) {
         setColorScheme(colorTheme);
 
@@ -66,6 +70,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={isDarkColorScheme ? DARK_THEME : LIGHT_THEME}>
       <GestureHandlerRootView style={{ flex: 1 }}>
+        <StatusBar style={isDarkColorScheme ? 'light' : 'dark'} />
         <Stack>
           <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ title: 'Modal', presentation: 'modal' }} />
