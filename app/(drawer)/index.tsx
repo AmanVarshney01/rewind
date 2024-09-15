@@ -1,8 +1,8 @@
-import { Stack } from 'expo-router';
+import { Stack } from 'expo-router'
 
-import { Container } from '~/components/Container';
-import { Button } from '~/components/ui/button';
-import { Text } from '~/components/ui/text';
+import { Container } from '~/components/Container'
+import { Button } from '~/components/ui/button'
+import { Text } from '~/components/ui/text'
 
 export default function Home() {
   return (
@@ -15,5 +15,5 @@ export default function Home() {
         </Button>
       </Container>
     </>
-  );
+  )
 }

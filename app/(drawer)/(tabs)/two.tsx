@@ -1,7 +1,7 @@
-import { Stack } from 'expo-router';
-import { Text } from 'react-native';
+import { Stack } from 'expo-router'
+import { Text } from 'react-native'
 
-import { Container } from '~/components/Container';
+import { Container } from '~/components/Container'
 
 export default function Home() {
   return (
@@ -11,5 +11,5 @@ export default function Home() {
         <Text>fjdncjd</Text>
       </Container>
     </>
-  );
+  )
 }

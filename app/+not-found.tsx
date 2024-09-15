@@ -1,7 +1,7 @@
-import { Link, Stack } from 'expo-router';
-import { Text } from 'react-native';
+import { Link, Stack } from 'expo-router'
+import { Text } from 'react-native'
 
-import { Container } from '~/components/Container';
+import { Container } from '~/components/Container'
 
 export default function NotFoundScreen() {
   return (
@@ -14,11 +14,11 @@ export default function NotFoundScreen() {
         </Link>
       </Container>
     </>
-  );
+  )
 }
 
 const styles = {
   title: `text-xl font-bold`,
   link: `mt-4 pt-4`,
   linkText: `text-base text-[#2e78b7]`,
-};
+}

@@ -1,15 +1,16 @@
-import { Ionicons, MaterialIcons } from '@expo/vector-icons';
-import { Link } from 'expo-router';
-import { Drawer } from 'expo-router/drawer';
+import { Ionicons, MaterialIcons } from '@expo/vector-icons'
+import { Link } from 'expo-router'
+import { Drawer } from 'expo-router/drawer'
 
-import { HeaderButton } from '~/components/HeaderButton';
-import { ThemeToggle } from '~/components/ThemeToggle';
+import { HeaderButton } from '~/components/HeaderButton'
+import { ThemeToggle } from '~/components/ThemeToggle'
 
 const DrawerLayout = () => (
   <Drawer
     screenOptions={{
       headerRight: () => <ThemeToggle />,
-    }}>
+    }}
+  >
     <Drawer.Screen
       name="index"
       options={{
@@ -34,6 +35,6 @@ const DrawerLayout = () => (
       }}
     />
   </Drawer>
-);
+)
 
-export default DrawerLayout;
+export default DrawerLayout
