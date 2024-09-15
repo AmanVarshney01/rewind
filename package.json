@@ -7,8 +7,9 @@
     "ios": "expo run:ios",
     "start": "expo start",
     "prebuild": "expo prebuild",
-    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
+    "lint": "bunx biome lint --write --no-errors-on-unmatched --files-ignore-unknown=true",
+    "format": "bunx biome format --write --no-errors-on-unmatched --files-ignore-unknown=true",
+    "check": "bunx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
     "web": "expo start --web",
     "prepare": "husky"
   },
