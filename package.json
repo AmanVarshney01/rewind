@@ -12,7 +12,7 @@
     "check": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
     "web": "expo start --web"
   },
-  "dependencies": {q
+  "dependencies": {
     "@expo/vector-icons": "^14.0.4",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/bottom-tabs": "^6.6.1",
