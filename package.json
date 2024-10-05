@@ -7,12 +7,12 @@
     "ios": "expo run:ios",
     "start": "expo start",
     "prebuild": "expo prebuild",
-    "lint": "bunx biome lint --write --no-errors-on-unmatched --files-ignore-unknown=true",
-    "format": "bunx biome format --write --no-errors-on-unmatched --files-ignore-unknown=true",
-    "check": "bunx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
+    "lint": "biome lint --write --no-errors-on-unmatched --files-ignore-unknown=true",
+    "format": "biome format --write --no-errors-on-unmatched --files-ignore-unknown=true",
+    "check": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
     "web": "expo start --web"
   },
-  "dependencies": {
+  "dependencies": {q
     "@expo/vector-icons": "^14.0.4",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/bottom-tabs": "^6.6.1",
@@ -58,9 +58,7 @@
   },
   "expo": {
     "install": {
-      "exclude": [
-        "react-native-safe-area-context"
-      ]
+      "exclude": ["react-native-safe-area-context"]
     }
   },
   "private": true
