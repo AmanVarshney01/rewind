@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "minimal",
-    "slug": "minimal",
+    "name": "rewind",
+    "slug": "rewind",
     "version": "1.0.0",
-    "scheme": "minimal",
+    "scheme": "rewind",
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -31,7 +31,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.amanvarshney11.minimal"
+      "package": "com.amanvarshney11.rewind"
     },
     "extra": {
       "eas": {

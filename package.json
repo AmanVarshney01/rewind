@@ -31,7 +31,7 @@
     "expo-system-ui": "~3.0.7",
     "expo-web-browser": "~13.0.3",
     "lucide-react-native": "^0.441.0",
-    "nativewind": "^4.1.10",
+    "nativewind": "^4.1.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",
@@ -58,8 +58,13 @@
   },
   "expo": {
     "install": {
-      "exclude": ["react-native-safe-area-context"]
+      "exclude": [
+        "react-native-safe-area-context"
+      ]
     }
   },
-  "private": true
+  "private": true,
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
 }

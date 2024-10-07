@@ -1,6 +1,6 @@
 {
   "cesVersion": "2.11.24",
-  "projectName": "minimal",
+  "projectName": "rewind",
   "packages": [
     {
       "name": "expo-router",
